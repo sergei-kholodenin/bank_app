@@ -1,0 +1,210 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+button {
+  border-radius: 0;
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input,
+button,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #1b1d1f;
+  color: #fdfdfd;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+input {
+  font-size: 16px;
+  background-color: transparent;
+  color: #fdfdfd;
+}
+input::-moz-placeholder {
+  color: #4f5157;
+}
+input::placeholder {
+  color: #4f5157;
+}
+
+a {
+  color: #fdfdfd;
+  text-decoration: none;
+  transition: border-color 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+  animation: drawing 0.4s;
+}
+a:hover {
+  border-color: #917cff;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.fade-in {
+  animation: fadeIn 0.9s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bounce {
+  animation: bounce 0.7s;
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(0.2);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.rotate {
+  animation: rotate 1.2s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(58deg);
+  }
+  60% {
+    transform: rotate(-40deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}/*# sourceMappingURL=global.css.map */

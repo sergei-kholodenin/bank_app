@@ -1,0 +1,23 @@
+@import 'src/styles/variables';
+
+.logout {
+	> button {
+		background-color: $bg-block;
+		border: none;
+		border-radius: 50%;
+		color: lighten($text-gray, 15%);
+		transition: color 0.3s ease-in-out;
+		width: 40px;
+		height: 40px;
+		padding: 2px;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	> svg {
+		width: 22px;
+		height: 22px;
+	}
+}

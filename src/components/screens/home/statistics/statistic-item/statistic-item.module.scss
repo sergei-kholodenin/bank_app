@@ -1,0 +1,39 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.statistic-item {
+	@include transition;
+
+	padding: 1rem;
+	border-radius: $radius;
+	margin-bottom: 1rem;
+	position: relative;
+
+	content: '';
+	border-radius: $radius;
+	box-shadow: 3px 3px 0 darken($secondary, 25%);
+	background-color: rgba($secondary, 95%);
+
+	&:last-child {
+		box-shadow: 3px 3px 0 #7661e4;
+		background-color: rgba($primary, 95%);
+	}
+
+	> span {
+		color: #111;
+		display: inline-block;
+		z-index: 2;
+		position: relative;
+
+		&:first-child {
+			margin-right: 0.6rem;
+			opacity: 0.8;
+			font-weight: 500;
+		}
+
+		&:last-child {
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+}
